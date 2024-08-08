@@ -1,0 +1,54 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #f8f9fa; /* Adjust the background color as needed */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 15px; /* Adjust spacing between menu items */
+}
+
+.nav-link {
+  color: #000; /* Adjust text color as needed */
+  padding: 10px 15px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000; /* Text color for menu items */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,..."); /* Ensure the icon is visible */
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 0;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 10px;
+  }
+}

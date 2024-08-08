@@ -1,0 +1,480 @@
+/* Home.css */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  height: 400px; /* Fixed height for uniformity */
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-card {
+  perspective: 1000px;
+  height: 100%; /* Ensure flip-card takes full height of card */
+}
+
+.flip-card__container {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ensure container takes full height of flip-card */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card__container {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out the content */
+}
+
+.card-back {
+  background: #333;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.card-front__tp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  flex: 1; /* Allow it to grow */
+}
+
+
+.card-front__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.card-front__heading {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.card-front__text-price {
+  font-size: 1rem;
+}
+
+.card-front__bt {
+  margin-top: auto; /* Push button to the bottom */
+}
+
+.card-front__text-view {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inside-page {
+  margin-top: auto; /* Ensure content is pushed to the bottom */
+  padding: 10px; /* Add padding inside the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.inside-page__container {
+  text-align: center;
+}
+
+.inside-page__heading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.inside-page__text {
+  font-size: 1rem;
+}
+
+.inside-page__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Default button color */
+}
+
+/* Mumbai */
+.card-front__tp--mumbai {
+  background: #e0f7fa; /* Light Cyan */
+}
+
+.inside-page__btn--mumbai {
+  background-color: #0288d1; /* Cyan Button */
+}
+
+.inside-page__content--mumbai {
+  background-color: #b2ebf2; /* Lighter Cyan */
+}
+
+/* Pune */
+.card-front__tp--pune {
+  background: #c8e6c9; /* Light Green */
+}
+
+.inside-page__btn--pune {
+  background-color: #43a047; /* Darker Green Button */
+}
+
+.inside-page__content--pune {
+  background-color: #a5d6a7; /* Lighter Green */
+}
+
+/* Nagpur */
+.card-front__tp--nagpur {
+  background: #fff3e0; /* Light Orange */
+}
+
+.inside-page__btn--nagpur {
+  background-color: #fb8c00; /* Darker Orange Button */
+}
+
+.inside-page__content--nagpur {
+  background-color: #ffe0b2; /* Lighter Orange */
+}
+
+/* Add more city-specific styles as needed */
+
+
+/* Nashik */
+.card-front__tp--nashik {
+  background: #fbe9e7; /* Light Pink */
+}
+.inside-page__btn--nashik {
+  background-color: #d32f2f; /* Red */
+}
+.inside-page__content--nashik {
+  background-color: #ffcdd2; /* Lighter Pink */
+}
+
+/* Aurangabad */
+.card-front__tp--aurangabad {
+  background: #e3f2fd; /* Light Blue */
+}
+.inside-page__btn--aurangabad {
+  background-color: #1976d2; /* Deep Blue */
+}
+.inside-page__content--aurangabad {
+  background-color: #bbdefb; /* Lighter Blue */
+}
+
+/* Solapur */
+.card-front__tp--solapur {
+  background: #e8f5e9; /* Light Green */
+}
+.inside-page__btn--solapur {
+  background-color: #388e3c; /* Green */
+}
+.inside-page__content--solapur {
+  background-color: #a5d6a7; /* Lighter Green */
+}
+
+/* Sangli */
+.card-front__tp--sangli {
+  background: #f3e5f5; /* Light Purple */
+}
+.inside-page__btn--sangli {
+  background-color: #f57c00; /* Deep Orange */
+}
+.inside-page__content--sangli {
+  background-color: #e1bee7; /* Lighter Purple */
+}
+
+/* Kolhapur */
+.card-front__tp--kolhapur {
+  background: #fce4ec; /* Light Pink */
+}
+.inside-page__btn--kolhapur {
+  background-color: #d32f2f; /* Dark Red */
+}
+.inside-page__content--kolhapur {
+  background-color: #f8bbd0; /* Lighter Pink */
+}
+
+/* Amravati */
+.card-front__tp--amravati {
+  background: #f1f8e9; /* Light Lime */
+}
+.inside-page__btn--amravati {
+  background-color: #8e24aa; /* Purple */
+}
+.inside-page__content--amravati {
+  background-color: #c5e1a5; /* Lighter Lime */
+}
+
+/* Jalgaon */
+.card-front__tp--jalgaon {
+  background: #e8eaf6; /* Light Blue */
+}
+.inside-page__btn--jalgaon {
+  background-color: #0288d1; /* Cyan */
+}
+.inside-page__content--jalgaon {
+  background-color: #c5cae9; /* Lighter Blue */
+}
+
+/* Nanded */
+.card-front__tp--nanded {
+  background: #f8bbd0; /* Light Pink */
+}
+.inside-page__btn--nanded {
+  background-color: #c2185b; /* Dark Pink */
+}
+.inside-page__content--nanded {
+  background-color: #f48fb1; /* Lighter Pink */
+}
+
+/* Latur */
+.card-front__tp--latur {
+  background: #ffecb3; /* Light Yellow */
+}
+.inside-page__btn--latur {
+  background-color: #ff5722; /* Orange */
+}
+.inside-page__content--latur {
+  background-color: #ffe082; /* Lighter Yellow */
+}
+
+/* Dhule */
+.card-front__tp--dhule {
+  background: #d1c4e9; /* Light Lavender */
+}
+.inside-page__btn--dhule {
+  background-color: #7b1fa2; /* Purple */
+}
+.inside-page__content--dhule {
+  background-color: #b39ddb; /* Lighter Lavender */
+}
+
+/* Satara */
+.card-front__tp--satara {
+  background: #ffccbc; /* Light Peach */
+}
+.inside-page__btn--satara {
+  background-color: #e64a19; /* Orange-Red */
+}
+.inside-page__content--satara {
+  background-color: #ffab91; /* Lighter Peach */
+}
+
+/* Akola */
+.card-front__tp--akola {
+  background: #d7ccc8; /* Light Brown */
+}
+.inside-page__btn--akola {
+  background-color: #5d4037; /* Dark Brown */
+}
+.inside-page__content--akola {
+  background-color: #bcaaa4; /* Lighter Brown */
+}
+
+/* Ahmednagar */
+.card-front__tp--ahmednagar {
+  background: #ffe0b2; /* Light Orange */
+}
+.inside-page__btn--ahmednagar {
+  background-color: #ff6f00; /* Amber */
+}
+.inside-page__content--ahmednagar {
+  background-color: #ffe082; /* Lighter Orange */
+}
+
+/* Chandrapur */
+.card-front__tp--chandrapur {
+  background: #f3e5f5; /* Light Purple */
+}
+.inside-page__btn--chandrapur {
+  background-color: #6a1b9a; /* Deep Purple */
+}
+.inside-page__content--chandrapur {
+  background-color: #e1bee7; /* Lighter Purple */
+}
+
+/* Yavatmal */
+.card-front__tp--yavatmal {
+  background: #ffccd2; /* Light Pink */
+}
+.inside-page__btn--yavatmal {
+  background-color: #c62828; /* Red */
+}
+.inside-page__content--yavatmal {
+  background-color: #ef9a9a; /* Lighter Pink */
+}
+
+/* Beed */
+.card-front__tp--beed {
+  background: #ffecb3; /* Light Yellow */
+}
+.inside-page__btn--beed {
+  background-color: #f57c00; /* Orange */
+}
+.inside-page__content--beed {
+  background-color: #ffe082; /* Lighter Yellow */
+}
+
+/* Parbhani */
+.card-front__tp--parbhani {
+  background: #d1c4e9; /* Light Lavender */
+}
+.inside-page__btn--parbhani {
+  background-color: #512da8; /* Indigo */
+}
+.inside-page__content--parbhani {
+  background-color: #b39ddb; /* Lighter Lavender */
+}
+
+/* Jalna */
+.card-front__tp--jalna {
+  background: #c5cae9; /* Light Indigo */
+}
+.inside-page__btn--jalna {
+  background-color: #303f9f; /* Indigo */
+}
+.inside-page__content--jalna {
+  background-color: #9fa8da; /* Lighter Indigo */
+}
+
+/* Osmanabad */
+.card-front__tp--osmanabad {
+  background: #f0f4c3; /* Light Lime */
+}
+.inside-page__btn--osmanabad {
+  background-color: #afb42b; /* Lime */
+}
+.inside-page__content--osmanabad {
+  background-color: #cddc39; /* Lighter Lime */
+}
+
+/* Bhandara */
+.card-front__tp--bhandara {
+  background: #fff59d; /* Light Yellow */
+}
+.inside-page__btn--bhandara {
+  background-color: #fbc02d; /* Golden Yellow */
+}
+.inside-page__content--bhandara {
+  background-color: #fff176; /* Lighter Yellow */
+}
+
+/* Buldhana */
+.card-front__tp--buldhana {
+  background: #d1c4e9; /* Light Lavender */
+}
+.inside-page__btn--buldhana {
+  background-color: #7b1fa2; /* Purple */
+}
+.inside-page__content--buldhana {
+  background-color: #b39ddb; /* Lighter Lavender */
+}
+
+/* Ratnagiri */
+.card-front__tp--ratnagiri {
+  background: #ffccbc; /* Light Peach */
+}
+.inside-page__btn--ratnagiri {
+  background-color: #ff7043; /* Orange */
+}
+.inside-page__content--ratnagiri {
+  background-color: #ffab91; /* Lighter Peach */
+}
+
+/* Gondia */
+.card-front__tp--gondia {
+  background: #e3f2fd; /* Light Blue */
+}
+.inside-page__btn--gondia {
+  background-color: #0288d1; /* Cyan */
+}
+.inside-page__content--gondia {
+  background-color: #bbdefb; /* Lighter Blue */
+}
+
+/* Washim */
+.card-front__tp--washim {
+  background: #fff8e1; /* Light Cream */
+}
+.inside-page__btn--washim {
+  background-color: #ffa000; /* Amber */
+}
+.inside-page__content--washim {
+  background-color: #ffecb3; /* Lighter Cream */
+}
+
+/* Wardha */
+.card-front__tp--wardha {
+  background: #c8e6c9; /* Light Green */
+}
+.inside-page__btn--wardha {
+  background-color: #388e3c; /* Green */
+}
+.inside-page__content--wardha {
+  background-color: #a5d6a7; /* Lighter Green */
+}
+
+/* Palghar */
+.card-front__tp--palghar {
+  background: #f5f5f5; /* Light Grey */
+}
+.inside-page__btn--palghar {
+  background-color: #616161; /* Grey */
+}
+.inside-page__content--palghar {
+  background-color: #e0e0e0; /* Lighter Grey */
+}
+
+/* Raigad */
+.card-front__tp--raigad {
+  background: #d7ccc8; /* Light Brown */
+}
+.inside-page__btn--raigad {
+  background-color: #6d4c41; /* Dark Brown */
+}
+.inside-page__content--raigad {
+  background-color: #bcaaa4; /* Lighter Brown */
+}

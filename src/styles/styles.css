@@ -1,0 +1,70 @@
+/* src/styles/styles.css */
+.contact-us {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-error {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .destination-detail {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .destination-detail__image {
+    width: 100%;
+    height: auto;
+  }
+  
+  h1, h2 {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
